@@ -199,13 +199,17 @@ footer{
 
 @media(max-width: 500px) {
 
+    body {
+        padding: 0%;
+        height: 100%;
+    }
+
     nav {
-        padding-top: 15%;
+        padding-top: 110%;
     }
 
     .logo {
-        width: 50%;
-        margin-top: 5%;
+        width: 30%;
     }
 
     .navdiv {
@@ -214,15 +218,54 @@ footer{
         align-items: center;
         width: 100%;
         border-bottom: gray 1px solid;
+        padding-top: 2%;
     }
 
     a {
         border-top: gray 1px solid;
         width: 100%;
         text-align: center;
+        padding-top: 3%;
     }
 
+    .secondbody {
+        padding: 0% 4%;
+    }
 
+    .headerdiv{
+        padding-top: 5%;
+    }
+
+    .firstsec {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .firstsec div {
+        width: 100%;
+        padding: 3% 0%;
+    }
+
+    .secsec {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .secsec div {
+        width: 100%;
+        padding: 3% 0%;
+    }
+
+    .contact {
+        padding: 5% 0%;
+    }
+
+    footer {
+        padding-top: 4%;
+        padding-bottom: 3%;
+    }
 
 }
 
