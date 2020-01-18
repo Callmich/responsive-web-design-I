@@ -78,7 +78,18 @@ body{
 
 nav{
 	display: flex;
-	justify-content: space-between;
+    justify-content: space-between;
+    margin-top: 2%;
+}
+
+.logo {
+    width: 20%;
+}
+
+.navdiv {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
 }
 
 a{
@@ -88,14 +99,14 @@ a{
 }
 
 h1{
-	font-size: 300%;
+	font-size: 400%;
 }
 
 header{
-	display: flex;
-	justify-content: space-around;
-    padding-bottom: 2%;
-    border-bottom: solid 1px black;
+    display: flex;
+    justify-content: flex-end;
+    padding: 4% 0%;
+    border-bottom: solid 2px black;
 }
 
 .getstart{
@@ -109,16 +120,7 @@ header{
 	flex-direction: column;
 	justify-content: center;
     align-items: center;
-}
-
-.firstpic{
-	width: 80%;
-}
-
-.addspace{
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
+    padding-right: 10%;
 }
 
 .firstsec{
@@ -137,7 +139,7 @@ header{
 }
 
 .secsec{
-	border-bottom: 1px black solid;
+	border-bottom: 2px black solid;
 	display: flex;
 	justify-content: space-between;
 	padding: 3% 0%;
@@ -157,6 +159,10 @@ footer{
 	justify-content: center;
 	padding-bottom: 2%;
 }
+
+
+
+
 
 
 
