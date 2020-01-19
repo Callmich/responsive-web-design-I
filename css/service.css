@@ -209,3 +209,73 @@ li{
     }
 }
 
+/* CSS for mobile */
+
+@media(max-width: 500px) {
+
+    body {
+        padding: 0%;
+        height: 100%;
+    }
+
+    nav {
+        padding-top: 190%;
+    }
+
+    .logo {
+        width: 30%;
+    }
+
+    .navdiv {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        border-bottom: gray 1px solid;
+        padding-top: 2%;
+    }
+
+    a {
+        border-top: gray 1px solid;
+        width: 100%;
+        text-align: center;
+        padding-top: 3%;
+    }
+
+    .secondbody {
+        padding: 0% 4%;
+    }
+
+    .allboxes {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .boxes{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        border: black solid 1px;
+        background-color: lightgray;
+        margin-top: 5%;
+    }
+
+    .box1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .factwords{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .services-info-img {
+        display: none;
+    }
+
+}
