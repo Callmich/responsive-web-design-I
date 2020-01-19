@@ -81,7 +81,7 @@ nav{
     display: flex;
     justify-content: space-between;
     width: 100%;
-    padding-bottom: 2%;
+    padding: 2% 0%;
 }
 
 .logo {
@@ -99,10 +99,6 @@ a{
 	margin: 2%;
     text-decoration: none;
 }
-
-
-
-/* CSS for services page starting here */
 
 .services-header-img {
     width: 99%;
@@ -176,3 +172,40 @@ li{
     padding-bottom: 1%;
     text-align: center;
 } 
+
+/* CSS for the tablet version */
+
+@media(max-width: 800px) {
+
+    /* body {
+        height: 1000px;
+    } */
+
+    nav {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-top: 15%;
+    }
+
+    .logo{
+        width: 25%;
+    }
+
+    .navdiv{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding-top: 4%;
+    }
+
+    .services-header-img {
+        display: none;
+    }
+
+    .headserv {
+        display: flex;
+        align-items: center;
+    }
+}
+
