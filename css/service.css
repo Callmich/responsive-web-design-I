@@ -68,18 +68,20 @@ h1, h2, h3, h4, h5 {
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
 body{
-	
+	max-width: 100%;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
-	padding: 2% 5%;
-	Height: 1200px;
+    padding: 2% 5%;
+    margin: 0 auto;
+    height: 1500px;
 }
 
 nav{
-	display: flex;
+    display: flex;
     justify-content: space-between;
-    margin-top: 4%;
+    width: 100%;
+    padding: 2% 0%;
 }
 
 .logo {
@@ -95,78 +97,95 @@ nav{
 a{
 	color:gray;
 	margin: 2%;
-	text-decoration: none;
+    text-decoration: none;
 }
 
-h1{
-	font-size: 400%;
+.services-header-img {
+    width: 99%;
 }
 
-header{
-    display: flex;
-    justify-content: flex-end;
+.headserv{
+	display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
     padding: 4% 0%;
-    border-bottom: solid 2px black;
 }
 
-.getstart{
-    border: black 1px solid;
-    padding: 1% 8%;
+.lineserv{
+	font-size: 200%;
 }
 
-.headerdiv{
-	text-align: center;
+header {
+	border-bottom: black 1px solid;
+}
+
+.allboxes{
+	border-bottom: black 1px solid;
+	padding-bottom: 4%;
+	padding-top: 4%;
+} 
+
+.boxes{
+    width: 48%;
+    height: 20%;
+	border: black solid 1px;
+	background-color: lightgray;
+	padding: 2%
+}
+
+.box1{
 	display: flex;
-	flex-direction: column;
-	justify-content: center;
-    align-items: center;
-    padding-right: 10%;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: space-between;
 }
 
-.firstsec{
+.boxes span{
+	border: black 1px solid;
+	background-color: white;
+	text-align: center;
+	padding: 0% 4%;
+}
+
+.facts{
+	padding: 2% 0%;
 	display: flex;
 	justify-content: space-between;
-	padding: 3% 0%;
 }
 
-.firstsec div{
-	width: 48%;
+.factwords{
+	width:45%
 }
 
-
-.middle-img{
-	width: 100%;
+.services-info-img{
+	width: 45%
 }
 
-.secsec{
-	border-bottom: 2px black solid;
-	display: flex;
-	justify-content: space-between;
-	padding: 3% 0%;
+li{
+	list-style-type: disc;
+	list-style-position: inside;
 }
 
-.secsec div{
-	width: 30%;
-}
-
-.contact{
-	padding: 3% 0%;
-}
-
-footer{
-	text-align: center;
-	display: flex;
-	justify-content: center;
-	padding-bottom: 2%;
-}
+.servfoot{
+	padding-top: 6%;
+    padding-bottom: 1%;
+    text-align: center;
+} 
 
 /* CSS for the tablet version */
+
 @media(max-width: 800px) {
+
+    /* body {
+        height: 1000px;
+    } */
 
     nav {
         display: flex;
         flex-direction: column-reverse;
         align-items: center;
+        margin-top: 15%;
     }
 
     .logo{
@@ -180,18 +199,13 @@ footer{
         padding-top: 4%;
     }
 
-    header{
-        display: flex;
-        justify-content: center;
-        padding-bottom: 8%;
-    }
-
-    .headerdiv{
-        padding: 0%;
-    }
-
-    .firstpic{
+    .services-header-img {
         display: none;
+    }
+
+    .headserv {
+        display: flex;
+        align-items: center;
     }
 }
 
@@ -205,7 +219,7 @@ footer{
     }
 
     nav {
-        padding-top: 110%;
+        padding-top: 190%;
     }
 
     .logo {
@@ -232,38 +246,36 @@ footer{
         padding: 0% 4%;
     }
 
-    .headerdiv{
-        padding-top: 5%;
+    .allboxes {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .boxes{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        border: black solid 1px;
+        background-color: lightgray;
+        margin-top: 5%;
     }
 
-    .firstsec {
+    .box1{
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
-    .firstsec div {
+    .factwords{
         width: 100%;
-        padding: 3% 0%;
-    }
-
-    .secsec {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
-    .secsec div {
-        width: 100%;
-        padding: 3% 0%;
+    .services-info-img {
+        display: none;
     }
 
-    .contact {
-        padding: 5% 0%;
-    }
-
-    footer {
-        padding-top: 4%;
-        padding-bottom: 3%;
-    }
-} 
+}
